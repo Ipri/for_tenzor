@@ -1,11 +1,34 @@
 @font-face {
 	font-family: 'PT Sans';
-	src: url('pts55f_w.eot');
-	src: local('PT Sans'), url('PTS55F_W.woff') format('woff');
+	src: local('PT Sans'),
+             url('ptsans.woff2') format('woff2'),
+             url('ptsans.woff') format('woff'),
+             url('ptsans.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'PT Sans';
+	font-style: normal;
+	font-weight: bold;
+	src: local('PT Sans Bold'),
+            url('ptsansbold.woff2') format('woff2'),
+            url('ptsansbold.woff') format('woff'),
+            url('ptsansbold.ttf') format('truetype');
 }
 
 @font-face {
 	font-family: 'PT Sans Narrow';
-	src: url('ptn57f_w.eot');
-	src: local('PT Sans Narrow'), url('PTN57F_W.woff') format('woff');
+	src: local('PT Sans Narrow'),
+             url('ptsansnarrow.woff2') format('woff2'),
+             url('ptsansnarrow.woff') format('woff'),
+             url('ptsansnarrow.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'PT Sans Narrow';
+	font-weight: bold;
+	src: local('PT Sans Narrow Bold'),
+             url('ptsansnarrowbold.woff2') format('woff2'),
+             url('ptsansnarrowbold.woff') format('woff'),
+             url('ptsansnarrowbold.ttf') format('truetype');
 }

@@ -1,14 +1,19 @@
 body {
   background-attachment: fixed;
-  background-image: url(../img/body_bg.svg);
+  background-image: url(../img/body_bg.png);
   padding-top: 0px;
   padding-bottom: 0px;
   background-color: #EEE;
   box-shadow: 0 0 0.7em #222222;
 }
+h1, h2 {
+    font-family: 'PT Sans', sans;
+}
+h3, h4, h5, h6 {
+    font-family: 'PT Sans Narrow', sans;
+}
 .hero-unit {
   background-image: url(../img/photo_head.jpg);
-  background-position: 0% 46.001%;
   box-shadow: inset 0 0 1em #222;
   border-radius: 0 0 10px 10px;
 }
@@ -29,6 +34,7 @@ body {
 }
 
 .container {
+    background: #ffffff; 
     padding: 0 0.9cm;
     box-shadow: 0 0 0.7em #222222;
 }
@@ -58,10 +64,50 @@ body {
     padding-top: 18px;
     width: 220px;
 }
-
-h1, h2 {
-    font-family: 'PT Sans', sans;
+#main a,
+#news a,
+#agenda a,
+#sponsors a,
+#pay a,
+#contacts a{ 
+    position: relative;
+    padding-left: 45px;
 }
-h3, h4, h5, h6 {
-    font-family: 'PT Sans Narrow', sans;
+#main a::before,
+#news a::before,
+#agenda a::before,
+#sponsors a::before,
+#pay a::before,
+#contacts a::before{
+    content: ' ';
+    width: 21px;
+    height: 20px;
+    background: url(../img/icons.png) no-repeat 0px 0px transparent;
+    background-size: cover; 
+    position: absolute;
+    top: 8px;
+    left: 15px;
+}
+#main a::before{
+    background-position-x: -50px;
+}
+#news a::before{
+    background-position-x: -28px;
+}
+#agenda a::before{
+    background-position-x: -120px;
+}
+#sponsors a::before{
+    background-position-x: -142px;
+}
+#pay a::before{
+    background-position-x: -4px;
+}
+#contacts a::before{
+    background-position-x: -96px;
+}
+
+
+#main.active a::before{
+    background-position-x: -163px;
 }
