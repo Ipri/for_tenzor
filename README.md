@@ -2,7 +2,7 @@
 Temporary storage. Was created to show the process of optimizing web pages from Tenzor
 
 # Demo
-- non optimized - http://priladnykh.ru/tenzor/optimized/
+- non optimized - http://priladnykh.ru/tenzor/non_optimized/
 - optimized - http://priladnykh.ru/tenzor/optimized/
 
 # Test 1 - Pingdom Service
